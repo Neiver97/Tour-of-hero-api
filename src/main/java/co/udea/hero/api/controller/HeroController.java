@@ -25,5 +25,9 @@ public class HeroController {
         return ResponseEntity.ok(heroService.getHeroes());
     }
 
+    @GetMapping()
+    public ResponseEntity<List<Hero>> getHeros(){
+        return ResponseEntity.ok(heroService.getHeroes());
+    }
 
 }
